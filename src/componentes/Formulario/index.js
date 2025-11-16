@@ -1,3 +1,4 @@
+import Botao from "../Botao";
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
 import "./Formulario.css";
@@ -10,7 +11,7 @@ const Formulario = () => {
     'Data Science',
     'Devops',
     'Ux e Design',
-    'Mobile', 
+    'Mobile',
     'Inovação e Gestão',
   ]
   return (
@@ -20,7 +21,8 @@ const Formulario = () => {
         <CampoTexto label="Nome" placeholder="Digite seu Nome" />
         <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
         <CampoTexto label="Imagem" placeholder="Digite o endereço da imagem" />
-        <ListaSuspensa label="Time" itens= {times} />
+        <ListaSuspensa label="Time" itens={times} />
+        <Botao texto="Criar Card" />
       </form>
     </section>
   );
